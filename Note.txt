@@ -4,6 +4,7 @@ https://github.com/Annie-Huang/material-ui-react-tutorial
 
 https://material-ui.com/
 https://material-ui.com/components/buttons/
+https://material-ui.com/components/icons/#material-icons
 =======================================================================
 
 C:\react>npx create-react-app material-ui-react-tutorial
@@ -11,7 +12,7 @@ C:\react>npx create-react-app material-ui-react-tutorial
 C:\react\material-ui-react-tutorial>npm install
 C:\react\material-ui-react-tutorial>npm run start
 C:\react\material-ui-react-tutorial>npm install @material-ui/core
-
+C:\react\material-ui-react-tutorial>npm install @material-ui/icons
 
 
 
