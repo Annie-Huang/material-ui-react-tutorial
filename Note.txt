@@ -10,6 +10,7 @@ https://material-ui.com/api/text-field/
 https://material-ui.com/styles/basics/
 https://material-ui.com/styles/api/#themeprovider
 https://material-ui.com/customization/theming/#createmuitheme-options-args-theme
+https://material-ui.com/components/typography/#install-with-npm
 
 =======================================================================
 
@@ -19,7 +20,7 @@ C:\react\material-ui-react-tutorial>npm install
 C:\react\material-ui-react-tutorial>npm run start
 C:\react\material-ui-react-tutorial>npm install @material-ui/core
 C:\react\material-ui-react-tutorial>npm install @material-ui/icons
-
+C:\react\material-ui-react-tutorial>npm install fontsource-roboto
 
 
 
