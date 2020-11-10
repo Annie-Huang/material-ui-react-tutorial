@@ -7,7 +7,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
@@ -66,46 +66,47 @@ function CheckboxExample() {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ButtonStyled />
-        <br/>
+    <ThemeProvider>
+      <div className="App">
+        <header className="App-header">
+          <ButtonStyled />
 
-        <TextField variant="filled" />
-        <TextField variant="outlined" color="secondary" type="date" />
-        <TextField variant="outlined" color="secondary" type="time" />
-        <TextField variant="filled" color="secondary" type="time" label="The Time"/>
-        <TextField variant="filled" color="secondary" type="email" label="The Time" value="test@test.com"/>
-        <TextField variant="filled" color="secondary" type="email" label="The Time" placeholder="test@test.com"/>
-        <br/>
+          <TextField variant="filled" />
+          <TextField variant="outlined" color="secondary" type="date" />
+          <TextField variant="outlined" color="secondary" type="time" />
+          <TextField variant="filled" color="secondary" type="time" label="The Time"/>
+          <TextField variant="filled" color="secondary" type="email" label="The Time" value="test@test.com"/>
+          <TextField variant="filled" color="secondary" type="email" label="The Time" placeholder="test@test.com"/>
+          <br/>
 
-        <CheckboxExample />
+          <CheckboxExample />
 
-        <br/>
-        <ButtonGroup>
-          <Button startIcon={<SaveIcon />} size='large' variant="contained" color="primary">Save</Button>
-          <Button startIcon={<DeleteIcon />} size='large' variant="contained" color="secondary">Discard</Button>
-        </ButtonGroup>
-        <br/>
-        <ButtonGroup variant="contained" color="primary">
-          <Button startIcon={<SaveIcon />} size='large'>Save</Button>
-          <Button startIcon={<DeleteIcon />} size='large'>Discard</Button>
-        </ButtonGroup>
-        <br/>
-        <br/>
+          <br/>
+          <ButtonGroup>
+            <Button startIcon={<SaveIcon />} size='large' variant="contained" color="primary">Save</Button>
+            <Button startIcon={<DeleteIcon />} size='large' variant="contained" color="secondary">Discard</Button>
+          </ButtonGroup>
+          <br/>
+          <ButtonGroup variant="contained" color="primary">
+            <Button startIcon={<SaveIcon />} size='large'>Save</Button>
+            <Button startIcon={<DeleteIcon />} size='large'>Discard</Button>
+          </ButtonGroup>
+          <br/>
+          <br/>
 
-        {/*<Button href="#" variant="contained" color="secondary">*/}
-        {/*<Button onClick={()=>alert('hello')} variant="contained" color="secondary">*/}
-        {/*<Button size='large' disabled variant="contained" color="secondary">*/}
-        {/*<Button size='large' style={{fontSize: 24}} variant="contained" color="secondary">*/}
-        <Button startIcon={<SaveIcon />} endIcon={<SaveIcon />} size='large' variant="contained" color="secondary">
-          Hello World
-        </Button>
-        <br/>
-        <br/>
+          {/*<Button href="#" variant="contained" color="secondary">*/}
+          {/*<Button onClick={()=>alert('hello')} variant="contained" color="secondary">*/}
+          {/*<Button size='large' disabled variant="contained" color="secondary">*/}
+          {/*<Button size='large' style={{fontSize: 24}} variant="contained" color="secondary">*/}
+          <Button startIcon={<SaveIcon />} endIcon={<SaveIcon />} size='large' variant="contained" color="secondary">
+            Hello World
+          </Button>
+          <br/>
+          <br/>
 
-      </header>
-    </div>
+        </header>
+      </div>
+    </ThemeProvider>
   );
 }
 
