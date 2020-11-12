@@ -11,6 +11,7 @@ import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/sty
 import { green, orange} from '@material-ui/core/colors';
 import 'fontsource-roboto';
 import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   root: {
@@ -87,54 +88,56 @@ function CheckboxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <header className="App-header">
-          {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
-          <Typography variant="h2" component="div">
-            Welcome to MUI
-          </Typography>
-          {/* Will show: <h6 className="MuiTypography-root MuiTypography-subtitle1">Learn how to use Material Ui</h6>*/}
-          <Typography variant="subtitle1">
-            Learn how to use Material Ui
-          </Typography>
+      <Container>
+        <div className="App">
+          <header className="App-header">
+            {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
+            <Typography variant="h2" component="div">
+              Welcome to MUI
+            </Typography>
+            {/* Will show: <h6 className="MuiTypography-root MuiTypography-subtitle1">Learn how to use Material Ui</h6>*/}
+            <Typography variant="subtitle1">
+              Learn how to use Material Ui
+            </Typography>
 
-          <ButtonStyled />
+            <ButtonStyled />
 
-          <TextField variant="filled" />
-          <TextField variant="outlined" color="secondary" type="date" />
-          <TextField variant="outlined" color="secondary" type="time" />
-          <TextField variant="filled" color="secondary" type="time" label="The Time"/>
-          <TextField variant="filled" color="secondary" type="email" label="The Time" value="test@test.com"/>
-          <TextField variant="filled" color="secondary" type="email" label="The Time" placeholder="test@test.com"/>
-          <br/>
+            <TextField variant="filled" />
+            <TextField variant="outlined" color="secondary" type="date" />
+            <TextField variant="outlined" color="secondary" type="time" />
+            <TextField variant="filled" color="secondary" type="time" label="The Time"/>
+            <TextField variant="filled" color="secondary" type="email" label="The Time" value="test@test.com"/>
+            <TextField variant="filled" color="secondary" type="email" label="The Time" placeholder="test@test.com"/>
+            <br/>
 
-          <CheckboxExample />
+            <CheckboxExample />
 
-          <br/>
-          <ButtonGroup>
-            <Button startIcon={<SaveIcon />} size='large' variant="contained" color="primary">Save</Button>
-            <Button startIcon={<DeleteIcon />} size='large' variant="contained" color="secondary">Discard</Button>
-          </ButtonGroup>
-          <br/>
-          <ButtonGroup variant="contained" color="primary">
-            <Button startIcon={<SaveIcon />} size='large'>Save</Button>
-            <Button startIcon={<DeleteIcon />} size='large'>Discard</Button>
-          </ButtonGroup>
-          <br/>
-          <br/>
+            <br/>
+            <ButtonGroup>
+              <Button startIcon={<SaveIcon />} size='large' variant="contained" color="primary">Save</Button>
+              <Button startIcon={<DeleteIcon />} size='large' variant="contained" color="secondary">Discard</Button>
+            </ButtonGroup>
+            <br/>
+            <ButtonGroup variant="contained" color="primary">
+              <Button startIcon={<SaveIcon />} size='large'>Save</Button>
+              <Button startIcon={<DeleteIcon />} size='large'>Discard</Button>
+            </ButtonGroup>
+            <br/>
+            <br/>
 
-          {/*<Button href="#" variant="contained" color="secondary">*/}
-          {/*<Button onClick={()=>alert('hello')} variant="contained" color="secondary">*/}
-          {/*<Button size='large' disabled variant="contained" color="secondary">*/}
-          {/*<Button size='large' style={{fontSize: 24}} variant="contained" color="secondary">*/}
-          <Button startIcon={<SaveIcon />} endIcon={<SaveIcon />} size='large' variant="contained" color="secondary">
-            Hello World
-          </Button>
-          <br/>
-          <br/>
+            {/*<Button href="#" variant="contained" color="secondary">*/}
+            {/*<Button onClick={()=>alert('hello')} variant="contained" color="secondary">*/}
+            {/*<Button size='large' disabled variant="contained" color="secondary">*/}
+            {/*<Button size='large' style={{fontSize: 24}} variant="contained" color="secondary">*/}
+            <Button startIcon={<SaveIcon />} endIcon={<SaveIcon />} size='large' variant="contained" color="secondary">
+              Hello World
+            </Button>
+            <br/>
+            <br/>
 
-        </header>
-      </div>
+          </header>
+        </div>
+      </Container>
     </ThemeProvider>
   );
 }
