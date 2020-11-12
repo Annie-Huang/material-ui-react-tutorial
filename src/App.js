@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { green, orange} from '@material-ui/core/colors';
 import 'fontsource-roboto';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
@@ -82,6 +83,15 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <header className="App-header">
+          {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
+          <Typography variant="h2" component="div">
+            Welcome to MUI
+          </Typography>
+          {/* Will show: <h6 className="MuiTypography-root MuiTypography-subtitle1">Learn how to use Material Ui</h6>*/}
+          <Typography variant="subtitle1">
+            Learn how to use Material Ui
+          </Typography>
+
           <ButtonStyled />
 
           <TextField variant="filled" />
