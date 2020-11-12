@@ -88,7 +88,7 @@ function CheckboxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
+      <Container maxWidth="xs">
         <div className="App">
           <header className="App-header">
             {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
