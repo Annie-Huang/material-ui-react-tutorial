@@ -12,6 +12,8 @@ import { green, orange} from '@material-ui/core/colors';
 import 'fontsource-roboto';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
@@ -91,6 +93,20 @@ function App() {
       <Container maxWidth="xs">
         <div className="App">
           <header className="App-header">
+            <Grid container>
+              <Grid item>
+                <Paper style={{height: 75, width:50, }}></Paper>
+              </Grid>
+              <Grid item>
+                <Paper style={{height: 75, width:50, }}></Paper>
+              </Grid>
+              <Grid item>
+                <Paper style={{height: 75, width:50, }}></Paper>
+              </Grid>
+            </Grid>
+
+            <br/>
+
             {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
             <Typography variant="h2" component="div">
               Welcome to MUI
