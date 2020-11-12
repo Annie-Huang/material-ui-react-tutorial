@@ -24,6 +24,12 @@ const useStyles = makeStyles({
 });
 
 const theme= createMuiTheme({
+  typography: {
+    h2: {
+      fontSize: 36,
+      marginBottom: 15,
+    }
+  },
   palette: {
     primary: {
       main: green[400],
