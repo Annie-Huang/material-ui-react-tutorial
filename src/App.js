@@ -38,14 +38,14 @@ const theme= createMuiTheme({
       marginBottom: 15,
     }
   },
-  palette: {
-    primary: {
-      main: green[400],
-    },
-    secondary: {
-      main: orange[400],
-    },
-  },
+  // palette: {
+  //   primary: {
+  //     main: green[400],
+  //   },
+  //   secondary: {
+  //     main: orange[400],
+  //   },
+  // },
 })
 
 function ButtonStyled() {
@@ -98,7 +98,7 @@ function App() {
       <Container maxWidth="xs">
         <div className="App">
           <header className="App-header">
-            <AppBar>
+            <AppBar color='secondary'>
               <Toolbar>
                 <IconButton>
                   <MenuIcon />
@@ -113,19 +113,6 @@ function App() {
             </AppBar>
 
             <br/>
-            <Grid container spacing={2} justify="center">
-              <Grid item xs={3} sm={6}>
-                <Paper style={{height: 75, width:'100%', }}></Paper>
-              </Grid>
-              <Grid item xs={3} sm={6}>
-                <Paper style={{height: 75, width:'100%', }}></Paper>
-              </Grid>
-              <Grid item xs={3} lg={6}>
-                <Paper style={{height: 75, width:'100%', }}></Paper>
-              </Grid>
-            </Grid>
-
-            <br/>
 
             {/* Will show: <div className="MuiTypography-root MuiTypography-h2">Welcome to MUI</div>*/}
             <Typography variant="h2" component="div">
@@ -137,6 +124,19 @@ function App() {
             </Typography>
 
             <ButtonStyled />
+
+            <br/>
+            <Grid container spacing={2} justify="center">
+              <Grid item xs={3} sm={6}>
+                <Paper style={{height: 75, width:'100%', }}></Paper>
+              </Grid>
+              <Grid item xs={3} sm={6}>
+                <Paper style={{height: 75, width:'100%', }}></Paper>
+              </Grid>
+              <Grid item xs={3} lg={6}>
+                <Paper style={{height: 75, width:'100%', }}></Paper>
+              </Grid>
+            </Grid>
 
             <TextField variant="filled" />
             <TextField variant="outlined" color="secondary" type="date" />
